@@ -7,9 +7,23 @@
 
 html,
 body {
+ font-family: 'Poppins', sans-serif;
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+header{
+  background-color:rgba(39, 37, 37, 0.664);
+  color:#ffffff;
+  font-size:1rem;
+}
+
+#hover-underline div:hover{
+  color:rgba(0, 0, 0, 0.789);
+}
+
+footer{
+  position: static;
 }
