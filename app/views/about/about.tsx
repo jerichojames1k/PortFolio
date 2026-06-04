@@ -1,14 +1,13 @@
 import AboutImage from "../../images/Jericho_Hipe.jpg";
 const About = () => {
   return (
-    <div className="h-screen">
-      <div className="flex flex-wrap justify-center">
-        <div className="p-10 border-2 border-red-400 w-[calc(100vw-500px)]">
-          <div className="float-right aspect-3/2  object-contain w-[300px] border-2">
+      <div id="about" className="flex flex-wrap justify-center">
+        <div id="info" className="p-10 w-[calc(100vw-500px)]">
+          <div  className="float-right aspect-3/2 w-[350px]">
             <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
           </div>
-          <p className="whitespace-pre-wrap text-[1.5rem]">
-            <span className="text-bold text-[2rem]">
+          <p className="whitespace-pre-wrap text-[1.7rem] p-2">
+            <span className="text-bold text-[3rem]">
               Hi, I’m Jericho James Villahermosa
             </span>{" "}
             , a software engineer who loves exploring new technologies and is
@@ -18,24 +17,26 @@ const About = () => {
             healthy and balanced lifestyle.
           </p>
         </div>
-        <div className="w-[calc(100vw-500px)] p-10 overflow-hidden">
-          <div className="flex flex-wrap width=[calc(100vw-500px)]">
-            <div className="float-right aspect-3/2  object-contain w-[300px] border-2 p-4">
+    
+       <div id="nature" className="grid grid-cols-3 gap-6w-[calc(100vw-464px)] p-10 overflow-hidden">
+            <div className="aspect-3/2  w-[350px] p-2 ">
               <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
             </div>
-            <div className="float-right aspect-3/2  object-contain w-[300px] border-2  p-4">
+            <div className="aspect-3/2  w-[350px]  p-2">
               <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
             </div>
-            <div className="float-right aspect-3/2  object-contain w-[300px] border-2  p-4">
+            <div className="aspect-3/2  w-[350px]  p-2">
               <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
             </div>
-            <div className="float-right aspect-3/2  object-contain w-[300px] border-2  p-4">
+            <div className="aspect-3/2  w-[350px]  p-2">
               <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+             <div className="aspect-3/2  w-[350px]  p-2">
+              <img className="w-[100%] h-fit" src={AboutImage} alt="Jericho" />
+            </div>
+       </div>
+
+       </div>
   );
 };
 export default About;
