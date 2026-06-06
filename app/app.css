@@ -7,7 +7,7 @@
 
 html,
 body {
-   font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
@@ -16,15 +16,18 @@ body {
 }
 
 header {
-  background-color: rgba(39, 37, 37, 0.664);
-  color: #ffff;
+  /* background-color: rgba(39, 37, 37, 0.664);
+  color: #ffff; */
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
   font-size: 1rem;
+  color: #ffff;
 }
 
-
-#hover-nav div:hover {
-  color: rgba(20, 3, 3, 0.981);
+header div {
+  padding: 15px 90px 15px 20px;
 }
+
 
 #main {
   padding-top: 100px;
@@ -47,35 +50,31 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 2px;
-  }
+    place-items: center;
+    width: 100%; 
+    padding: 90px 20px 0px 20px;
+  } 
 
   #info div {
-    width: 250px;
-    padding: 40px 4px 0px 4px;
+    width: 50%;
   }
 
   #info p {
-    font-size: .9rem;
+    font-size: 16px;
   }
 
   #info span {
-    font-size: 1rem;
+    font-size: 20px;
   }
 
   #about #nature {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    padding: 0px;
+    padding: 20px;
   }
 
   #nature div {
-    width: 250px;
+    width: 100%;
   }
-}
+} 
 
 /* Small devices (large phones) */
 @media (min-width: 576px) and (max-width: 768px) {
@@ -87,38 +86,33 @@ header {
     display: flex;
     justify-content: center;
   }
-
+ 
   #about #info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    place-items: center;
     width: 100%;
-    padding: 2px;
-  }
-   #about #nature {
-    display: grid;
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    width: 100%;
+    padding:40px 2px 0px 2px;
   }
 
   #info div {
-    width: 250px;
-    padding: 60px 4px 0px 4px;
+    width: 50%;
   }
 
   #info p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0px 40px 0px 40px;
   }
 
   #info span {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   #nature {
-    padding: 2;
+    padding: 20px;
   }
-  
+
 
   #nature div {
     width: 100%;
@@ -126,60 +120,72 @@ header {
 }
 
 /* Medium devices (tablets) */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   #main {
-    padding:0x;
+    padding: 0x;
   }
-  #about {
+
+  /* #about {
     display: flex;
     justify-content: center;
 
-  }
-   #about #info {
-    display: flex;
+  } */
+  #about #info {
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     width: 100%;
-    padding: 2px;
+    padding: 50px 20px 0px 20px;
+  }
+
+
+
+  #about #nature {
+    /* display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    border:2px solid #00BAF0 */
+    /* display: grid;
+    grid-template-columns: repeat(2 minmax(0, 1fr)); */
+    /* gap: 1.5rem; */
+    padding: 40px;
+  }
+
+  #nature div {
+    width: 100%;
   }
 
   #info div {
-    width:45%;
-    padding: 0px;
-  }
+    width: 40%;
+  } 
 
 
   #info p {
-    font-size: 1rem;
-    padding:0px 100px 0px 100px;
+    font-size: 1.5rem;
+    /* padding:0px 100px 0px 100px; */
   }
 
   #info span {
     font-size: 2rem;
   }
 
-  
+
 
 }
 
 /* Large devices (laptops/desktops) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   #main {
     padding-bottom: 2px;
   }
 
-  #about {
-    display: flex;
-    justify-content: center;
-
-  }
-
   #about #info {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     width: 100%;
-    padding: 2px;
   }
 
   #info div {
@@ -187,11 +193,20 @@ header {
   }
 
   #info p {
-    font-size: 2rem;
+    width: 75%;
+    font-size: 1.5rem;
   }
 
   #info span {
     font-size: 3rem;
+  }
+
+  #nature {
+    padding: 20px;
+  }
+
+  #nature div{
+   width:100%;
   }
 
 }
@@ -202,23 +217,11 @@ header {
     padding-bottom: 2px;
   }
 
-  #about {
-    display: flex;
-    justify-content: center;
-
-  }
 
   #about #info {
     width: 100%;
     padding: 5;
   }
-
-  #info div {
-    float: center;
-    width: 100%;
-    padding: 2;
-  }
-
 
   #info p {
     font-size: 2rem;
@@ -228,6 +231,13 @@ header {
     font-size: 3rem;
   }
 
+    #nature {
+    padding: 20px;
+  }
+  
+    #nature div{
+      width: 100%;
+    }
 
 }
 
